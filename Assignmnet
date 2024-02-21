@@ -1,0 +1,33 @@
+# Personal Information
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+print(f"Hello, my name is {name} and I am {age} years old.")
+
+# Favorite Hobbies
+favorite_hobbies = ["reading", "painting", "playing"]
+favorite_hobbies.append("sleeping")
+print(favorite_hobbies)
+
+# Screen Dimensions
+screen_dimensions = (1920, 1080)
+# Trying to modify the screen dimensions
+# screen_dimensions[0] = 1600  # This will result in a TypeError because tuples are immutable
+# print(screen_dimensions) 
+# Outcome: TypeError: 'tuple' object does not support item assignment
+
+# Pet Description
+pet = {
+    "type": "dog",
+    "name": "Buddy",
+    "age": 5
+}
+pet["color"] = "golden"
+print(f"My pet {pet['name']} is {pet['color']}.")
+
+# Adult Status
+
+is_adult = age
+if is_adult >= 18:
+    print("I am an adult.")
+else:
+    print("I am not an adult.")
